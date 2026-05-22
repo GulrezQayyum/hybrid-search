@@ -304,6 +304,15 @@ DOCUMENTS = [
     "Photosynthesis converts light energy into chemical energy stored in glucose using chlorophyll.",
     "The speed of light in a vacuum is approximately 299,792 kilometres per second.",
     "Lahore is the capital of Punjab province in Pakistan and is known for Mughal-era architecture.",
+
+    # Personal notes
+    "Remember to optimize the hybrid search engine for production by implementing caching and batch processing of queries for better throughput.",
+    "Consider using approximate nearest neighbor search with FAISS IVF indices instead of IndexFlatIP for datasets with millions of documents.",
+    "The team meeting on RAG systems is scheduled for Friday. Main topics: reducing hallucination in LLM outputs and improving retrieval precision.",
+    "For the next project sprint, we need to benchmark different embedding models against MS MARCO dataset to find the best accuracy-speed tradeoff.",
+    "Found a useful paper on dense-sparse retrieval fusion that shows RRF outperforms learned combination methods in zero-shot scenarios.",
+    "Bug fix needed: Handle edge case where query contains special characters that break the tokenizer. Test with: @#$% queries.",
+    "Performance notes: Embedding 10k documents takes ~5 seconds. BM25 indexing is nearly instant. Consider async loading for better UX.",
 ]
 
 
@@ -318,6 +327,9 @@ if __name__ == "__main__":
         "BM25 k1 parameter",                               # bm25 wins (exact term)
         "combining multiple search result lists",           # both contribute
         "Lahore Punjab Pakistan",                           # geographic exact match
+        "caching and batch processing optimization",        # personal note - semantic
+        "special characters tokenizer bug",                 # personal note - keywords
+        "RAG hallucination meeting Friday",                 # personal note - mixed
     ]
 
     for q in queries:
