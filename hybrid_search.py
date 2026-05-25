@@ -335,4 +335,4 @@ if __name__ == "__main__":
     for q in queries:
         engine.search(q, top_k=3, candidate_pool=10)
 
-    print("\n\nAll done! Try adding your own documents and queries.")
+    print("\n\nAll done!")
